@@ -1,0 +1,311 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261126140812
+Username: LAPTOP-2B4SPHGV\ADMIN
+RunAs User: LAPTOP-2B4SPHGV\ADMIN
+Configuration Name: 
+Machine: LAPTOP-2B4SPHGV (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 30344
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\git-nghiep-session.txt
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7> git clone https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git HOMEWORK-TDTT-GIT-nghiep
+Cloning into 'HOMEWORK-TDTT-GIT-nghiep'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 10 (delta 0), reused 10 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (10/10), 7.60 KiB | 1.52 MiB/s, done.
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7> Set-Location ".\HOMEWORK-TDTT-GIT-nghiep"
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git config user.name "Nguyễn An Nghiệp"
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git config user.email "nghiep2405@gmail.com"
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git config --get user.name
+Nguyễn An Nghiệp
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git config --get user.email
+nghiep2405@gmail.com
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git remote -v
+origin  https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (fetch)
+origin  https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (push)
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git status
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git fetch origin
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git switch main
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git pull --ff-only origin main
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git switch -c feature/site-foundation
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git branch --show-current
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git log --oneline -5
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> git status
+
+PS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261126140824
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20261126143001
+Username: LAPTOP-2B4SPHGV\ADMIN
+RunAs User: LAPTOP-2B4SPHGV\ADMIN
+Configuration Name: 
+Machine: LAPTOP-2B4SPHGV (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\661626d0e7\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 23228
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is ..\git-nghiep-session.txt
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git branch --show-current
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git status
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git diff
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git add .
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git diff --cached --check
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git diff --cached --stat
+ about.html           | 32 +++++++++++++++++++++++
+ assets/css/style.css | 74 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ index.html           | 32 +++++++++++++++++++++++
+ practice.html        | 32 +++++++++++++++++++++++
+ python.html          | 32 +++++++++++++++++++++++
+ resources.html       | 32 +++++++++++++++++++++++
+ roadmap.html         | 32 +++++++++++++++++++++++
+ 7 files changed, 266 insertions(+)
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git --no-pager diff --cached
++    </div>
++  </footer>
++</body>
++</html>
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git commit -m "feat(site-foundation): Add shared HTML scaffold and simple stylesheet"
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>cls
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git --no-pager log --oneline -5
+49fef3f (HEAD -> feature/site-foundation) feat(site-foundation): Add shared HTML
+ scaffold and simple stylesheet
+e52fe01 (origin/main, origin/HEAD, main) Initialize project documentation and Gi
+t configuration
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git --no-pager show --stat HEAD
+commit 49fef3ff08bd69a872122cf82626f664f1222ea4 (HEAD -> feature/site-foundation
+)
+Author: Nguyễn An Nghiệp <nghiep2405@gmail.com>
+Date:   Thu Nov 26 14:40:37 2026 +0700
+
+    feat(site-foundation): Add shared HTML scaffold and simple stylesheet
+
+ about.html           | 32 +++++++++++++++++++++++
+ assets/css/style.css | 74 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ index.html           | 32 +++++++++++++++++++++++
+ practice.html        | 32 +++++++++++++++++++++++
+ python.html          | 32 +++++++++++++++++++++++
+ resources.html       | 32 +++++++++++++++++++++++
+ roadmap.html         | 32 +++++++++++++++++++++++
+ 7 files changed, 266 insertions(+)
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git status
+nothing to commit, working tree clean
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261126144112
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20261126145648
+Username: LAPTOP-2B4SPHGV\ADMIN
+RunAs User: LAPTOP-2B4SPHGV\ADMIN
+Configuration Name: 
+Machine: LAPTOP-2B4SPHGV (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\661626d0e7\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 23228
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is ..\git-nghiep-session.txt
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git branch --show-current
+git status
+git --no-pager diff
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git add .
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git diff --cached --check
+git diff --cached --stat
+git --no-pager diff --cached
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git commit -m "feat(site-foundation): Add StudyHub homepage introduction"
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git --no-pager log --oneline -5
+git --no-pager show --stat HEAD
+git status
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>cls
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261126150550
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20261126154523
+Username: LAPTOP-2B4SPHGV\ADMIN
+RunAs User: LAPTOP-2B4SPHGV\ADMIN
+Configuration Name: 
+Machine: LAPTOP-2B4SPHGV (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\661626d0e7\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 24360
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is ..\git-nghiep-session.txt
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git branch --show-current
+feature/site-foundation
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git status
+        modified:   python.html
+        modified:   resources.html
+        modified:   roadmap.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git --no-pager diff
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git add .
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git diff --cached --check
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git diff --cached --stat
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git --no-pager diff --cached
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git commit -m "feat(site-foundation): Connect all page shells through shared navigation"
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git --no-pager log --oneline -5
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git --no-pager show --stat HEAD
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git status
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>cls
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261126154617
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20261126160638
+Username: LAPTOP-2B4SPHGV\ADMIN
+RunAs User: LAPTOP-2B4SPHGV\ADMIN
+Configuration Name: 
+Machine: LAPTOP-2B4SPHGV (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\661626d0e7\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 24360
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is ..\git-nghiep-session.txt
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git branch --show-current
+feature/site-foundation
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git status
+On branch feature/site-foundation
+nothing to commit, working tree clean
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git remote -v
+origin  https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (push)
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git --no-pager log --reverse --format="%h | %an <%ae> | %s" e52fe01..HEAD
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git rev-list --count e52fe01..HEAD
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git push -u origin feature/site-foundation
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>git status
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cADMIN\x5cOneDrive - VNU-HCMUS\x5cTuDuyTinhToan\x5clab\x5cw7\x5cHOMEWORK-TDTT-GIT-nghiepPS C:\Users\ADMIN\OneDrive - VNU-HCMUS\TuDuyTinhToan\lab\w7\HOMEWORK-TDTT-GIT-nghiep> ]633;B
+PS>Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261126161118
+**********************
