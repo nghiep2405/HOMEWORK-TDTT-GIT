@@ -1,0 +1,25 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files and logs
+*.tmp
+*.bak
+*.log
+~$*
+tmp/
+temp/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Keep project source, Markdown reports, screenshots and text evidence tracked.
