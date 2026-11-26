@@ -39,6 +39,37 @@ body {
   font-weight: 700;
 }
 
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  display: block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--primary);
+  background: #fff;
+}
+
+.site-nav a[aria-current="page"] {
+  font-weight: 700;
+}
+
+.site-nav a:focus-visible {
+  outline-color: #fff;
+}
+
 main.container {
   padding: 32px 0;
 }
