@@ -26,10 +26,54 @@
 
   <main id="main-content" class="container">
     <h1>Python cơ bản</h1>
-    <section class="panel" aria-labelledby="page-status">
-      <h2 id="page-status">Nội dung đang phát triển</h2>
-      <p>Trang này sẽ giới thiệu biến, điều kiện và vòng lặp qua ví dụ kèm kết quả.</p>
-      <p class="page-owner">Phụ trách: Nguyễn Thiên Vũ.</p>
+    <p>Tổng hợp 3 khái niệm nền tảng giúp người mới bắt đầu làm quen với lập trình Python qua ví dụ ngắn và kết quả chạy thực tế.</p>
+
+    <section class="panel" aria-labelledby="variables">
+      <h2 id="variables">1. Biến và kiểu dữ liệu cơ bản</h2>
+      <p>Biến dùng để lưu trữ dữ liệu trong bộ nhớ. Trong Python, bạn không cần khai báo kiểu dữ liệu trước mà gán trực tiếp giá trị bằng dấu <code>=</code>.</p>
+      <pre><code>ten_mon = "Tư duy tính toán"
+so_tuan = 15
+diem_muc_tieu = 8.5
+
+print("Môn học:", ten_mon)
+print("Tổng số tuần:", so_tuan)
+print("Điểm mục tiêu:", diem_muc_tieu)</code></pre>
+      <p><strong>Kết quả (Output):</strong></p>
+      <pre><code>Môn học: Tư duy tính toán
+Tổng số tuần: 15
+Điểm mục tiêu: 8.5</code></pre>
+    </section>
+
+    <section class="panel" aria-labelledby="conditions">
+      <h2 id="conditions">2. Câu lệnh điều kiện (if / elif / else)</h2>
+      <p>Cấu trúc rẽ nhánh giúp chương trình kiểm tra biểu thức điều kiện và thực thi khối lệnh thụt lề tương ứng.</p>
+      <pre><code>diem = 7.5
+
+if diem >= 8.0:
+    print("Xếp loại: Giỏi")
+elif diem >= 6.5:
+    print("Xếp loại: Khá")
+else:
+    print("Xếp loại: Trung bình")</code></pre>
+      <p><strong>Kết quả (Output):</strong></p>
+      <pre><code>Xếp loại: Khá</code></pre>
+    </section>
+
+    <section class="panel" aria-labelledby="loops">
+      <h2 id="loops">3. Vòng lặp (for / while)</h2>
+      <p>Vòng lặp giúp lặp lại một khối lệnh nhiều lần tự động, thường dùng để duyệt dãy số bằng hàm <code>range()</code> hoặc tính toán tích lũy.</p>
+      <pre><code>tong = 0
+for i in range(1, 6):
+    tong += i
+
+print("Tổng các số từ 1 đến 5 là:", tong)</code></pre>
+      <p><strong>Kết quả (Output):</strong></p>
+      <pre><code>Tổng các số từ 1 đến 5 là: 15</code></pre>
+    </section>
+
+    <section class="panel" aria-labelledby="next-step">
+      <h2 id="next-step">Bước tiếp theo</h2>
+      <p>Sau khi nắm vững biến, điều kiện và vòng lặp, chuyển sang mục <a href="practice.html">Thực hành</a> để luyện tập với 3 bài toán cơ bản.</p>
     </section>
   </main>
 
