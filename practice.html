@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thực hành | StudyHub</title>
+  <meta name="description" content="Ba bài tập Python cơ bản kèm ví dụ đầu vào, đầu ra và gợi ý tư duy giải quyết vấn đề dành cho sinh viên mới bắt đầu.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -25,11 +26,91 @@
   </header>
 
   <main id="main-content" class="container">
-    <h1>Thực hành</h1>
-    <section class="panel" aria-labelledby="page-status">
-      <h2 id="page-status">Nội dung đang phát triển</h2>
-      <p>Trang này sẽ có bài tính tổng hai số, kiểm tra chẵn/lẻ và tính tổng từ 1 đến n.</p>
-      <p class="page-owner">Phụ trách: Nguyễn Trọng Trực.</p>
+    <h1>Thực hành Python cơ bản</h1>
+
+    <section class="panel" aria-labelledby="practice-intro">
+      <h2 id="practice-intro">Hướng dẫn tự thực hành</h2>
+      <p>Ba bài tập dưới đây giúp bạn vận dụng kiến thức về biến, câu lệnh điều kiện và vòng lặp trong Python. Trước khi xem gợi ý, hãy thử phân tích theo 3 bước:</p>
+      <ol>
+        <li>Xác định rõ dữ liệu đầu vào (Input) và kết quả đầu ra (Output).</li>
+        <li>Viết các bước xử lý bằng lời (thuật toán) rồi chuyển sang mã Python.</li>
+        <li>Chạy thử với các ví dụ cho sẵn và tự kiểm tra thêm trường hợp biên (số 0, số âm, số lớn).</li>
+      </ol>
+      <p class="page-owner">Phụ trách nội dung: Nguyễn Trọng Trực.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="exercise-1">
+      <h2 id="exercise-1">Bài 1: Tính tổng hai số</h2>
+      <p><strong>Đề bài:</strong> Nhập vào hai số nguyên <code>a</code> và <code>b</code> từ bàn phím. Tính và in ra tổng của hai số đó.</p>
+      <ul>
+        <li><strong>Đầu vào:</strong> Hai số nguyên <code>a</code> và <code>b</code>.</li>
+        <li><strong>Đầu ra:</strong> Một số nguyên là giá trị của <code>a + b</code>.</li>
+      </ul>
+      <h3>Ví dụ minh họa</h3>
+      <pre><code>Đầu vào:
+a = 7
+b = 5
+
+Đầu ra:
+Tổng = 12</code></pre>
+      <details>
+        <summary>Xem gợi ý</summary>
+        <p>Dùng <code>int(input())</code> để đọc và chuyển đổi dữ liệu nhập từ chuỗi (<code>str</code>) sang số nguyên (<code>int</code>), sau đó tính <code>tong = a + b</code> và dùng <code>print()</code> để hiển thị kết quả.</p>
+      </details>
+    </section>
+
+    <section class="panel" aria-labelledby="exercise-2">
+      <h2 id="exercise-2">Bài 2: Kiểm tra số chẵn / lẻ</h2>
+      <p><strong>Đề bài:</strong> Nhập vào một số nguyên <code>n</code>. Kiểm tra xem <code>n</code> là số chẵn hay số lẻ và in kết quả tương ứng.</p>
+      <ul>
+        <li><strong>Đầu vào:</strong> Một số nguyên <code>n</code> (có thể âm, dương hoặc bằng 0).</li>
+        <li><strong>Đầu ra:</strong> In ra <code>Chẵn</code> nếu <code>n</code> chia hết cho 2, ngược lại in ra <code>Lẻ</code>.</li>
+      </ul>
+      <h3>Ví dụ minh họa</h3>
+      <pre><code>Ví dụ 1:
+Đầu vào: n = 8
+Đầu ra: 8 là số chẵn
+
+Ví dụ 2:
+Đầu vào: n = -3
+Đầu ra: -3 là số lẻ</code></pre>
+      <details>
+        <summary>Xem gợi ý</summary>
+        <p>Sử dụng toán tử chia lấy dư <code>%</code> kết hợp câu lệnh <code>if ... else</code>: nếu <code>n % 2 == 0</code> thì <code>n</code> là số chẵn, ngược lại là số lẻ.</p>
+      </details>
+    </section>
+
+    <section class="panel" aria-labelledby="exercise-3">
+      <h2 id="exercise-3">Bài 3: Tính tổng từ 1 đến n</h2>
+      <p><strong>Đề bài:</strong> Nhập vào một số nguyên dương <code>n</code> (<code>n &gt;= 1</code>). Tính tổng các số nguyên từ 1 đến <code>n</code>: <code>1 + 2 + ... + n</code>.</p>
+      <ul>
+        <li><strong>Đầu vào:</strong> Một số nguyên dương <code>n</code>.</li>
+        <li><strong>Đầu ra:</strong> Tổng các số nguyên từ 1 đến <code>n</code>.</li>
+      </ul>
+      <h3>Ví dụ minh họa</h3>
+      <pre><code>Ví dụ 1:
+Đầu vào: n = 5
+Đầu ra: Tổng từ 1 đến 5 = 15
+
+Ví dụ 2:
+Đầu vào: n = 10
+Đầu ra: Tổng từ 1 đến 10 = 55</code></pre>
+      <details>
+        <summary>Xem gợi ý</summary>
+        <p>Khởi tạo biến <code>tong = 0</code>, dùng vòng lặp <code>for i in range(1, n + 1):</code> và cộng dồn <code>tong += i</code>. Lưu ý <code>range(1, n + 1)</code> dừng trước <code>n + 1</code> nên sẽ chạy đủ từ 1 đến <code>n</code>.</p>
+      </details>
+    </section>
+
+    <section class="panel" aria-labelledby="self-check">
+      <h2 id="self-check">Tự kiểm tra và bước tiếp theo</h2>
+      <p>Sau khi viết xong mã cho cả 3 bài, hãy kiểm tra thêm các tình huống sau:</p>
+      <ul>
+        <li><strong>Bài 1:</strong> Thử với hai số âm (ví dụ <code>-4</code> và <code>-6</code>) hoặc một số bằng <code>0</code>.</li>
+        <li><strong>Bài 2:</strong> Thử với <code>n = 0</code> (số chẵn) và số nguyên âm lẻ (ví dụ <code>-5</code>).</li>
+        <li><strong>Bài 3:</strong> Thử với <code>n = 1</code> (kết quả phải là <code>1</code>) và đối chiếu bằng công thức <code>n * (n + 1) // 2</code>.</li>
+      </ul>
+      <p>Nếu cần ôn lại cú pháp biến, điều kiện hoặc vòng lặp, xem lại <a href="python.html">Python cơ bản</a> hoặc tìm thêm tài liệu tại <a href="resources.html">Tài nguyên</a>.</p>
+      <p><a class="button" href="resources.html">Tiếp tục đến trang Tài nguyên</a></p>
     </section>
   </main>
 
