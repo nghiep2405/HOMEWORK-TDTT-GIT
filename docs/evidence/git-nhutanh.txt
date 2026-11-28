@@ -1,10 +1,14 @@
-﻿**********************
+Evidence from actual Git output; local system identifiers and email redacted for privacy.
+No Git command results have been fabricated.
+
+=== ORIGINAL POWERSHELL TRANSCRIPT (redacted) ===
+**********************
 Windows PowerShell transcript start
 Start time: 20261128235906
-Username: NHUTANHVJPPRO\TAM NHU
-RunAs User: NHUTANHVJPPRO\TAM NHU
+Username: [WINDOWS_USER_REDACTED]
+RunAs User: [WINDOWS_USER_REDACTED]
 Configuration Name: 
-Machine: NHUTANHVJPPRO (Microsoft Windows NT 10.0.26200.0)
+Machine: [COMPUTER_NAME_REDACTED] (Microsoft Windows NT 10.0.26200.0)
 Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 Process ID: 4408
 PSVersion: 5.1.26100.9818
@@ -16,11 +20,11 @@ WSManStackVersion: 3.0
 PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
-Transcript started, output file is C:\Users\TAM NHU\git-nhutanh.txt
+Transcript started, output file is [USER_HOME]\git-nhutanh.txt
 PS C:\WINDOWS\System32> git clone https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git
 fatal: could not create work tree dir 'HOMEWORK-TDTT-GIT': Permission denied
 PS C:\WINDOWS\System32> cd $HOME
-PS C:\Users\TAM NHU> git clone https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git
+PS [USER_HOME]> git clone https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git
 Cloning into 'HOMEWORK-TDTT-GIT'...
 remote: Enumerating objects: 88, done.
 remote: Counting objects: 100% (88/88), done.
@@ -28,58 +32,340 @@ remote: Compressing objects: 100% (51/51), done.
 remote: Total 88 (delta 40), reused 69 (delta 29), pack-reused 0 (from 0)
 Receiving objects: 100% (88/88), 30.84 KiB | 3.43 MiB/s, done.
 Resolving deltas: 100% (40/40), done.
-PS C:\Users\TAM NHU> cd HOMEWORK-TDTT-GIT
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config user.name "Le Dang Nhut Anh"
+PS [USER_HOME]> cd HOMEWORK-TDTT-GIT
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git config user.name "Le Dang Nhut Anh"
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config user.email "EMAIL_GITHUB_CUA_BAN"
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git config user.email "EMAIL_GITHUB_CUA_BAN"
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config user.email "ldnanh2517@clc.fitus.edu.vn"
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git config user.email "[EMAIL_REDACTED]"
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git status
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git remote -v
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git remote -v
 origin  https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (fetch)
 origin  https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (push)
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config --get user.name
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git config --get user.name
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config --get user.email
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git config --get user.email
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git fetch origin
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git fetch origin
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git pull --ff-only origin main
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git pull --ff-only origin main
 From https://github.com/nghiep2405/HOMEWORK-TDTT-GIT
  * branch            main       -> FETCH_HEAD
 Already up to date.
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git switch feature/resources-and-team
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git switch feature/resources-and-team
 branch 'feature/resources-and-team' set up to track 'origin/feature/resources-and-team'.
 Switched to a new branch 'feature/resources-and-team'
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git branch
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git branch
 * feature/resources-and-team
   main
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git status
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git status
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git log --oneline -8
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git log --oneline -8
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git --no-pager show HEAD
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git --no-pager show HEAD
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git --no-pager diff origin/main...HEAD
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git --no-pager diff origin/main...HEAD
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git branch --show-current
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git branch --show-current
 feature/resources-and-team
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git status
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git status
 On branch feature/resources-and-team
 Your branch is up to date with 'origin/feature/resources-and-team'.
 
 nothing to commit, working tree clean
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git log --oneline -5
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git log --oneline -5
 8042849 Merge pull request #2 from nghiep2405/feature/practice-exercises
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git diff --stat origin/main...HEAD
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> git diff --stat origin/main...HEAD
 
-PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> Stop-Transcript
+PS [USER_HOME]\HOMEWORK-TDTT-GIT> Stop-Transcript
 **********************
 Windows PowerShell transcript end
 End time: 20261129000554
 **********************
+
+
+=== SUPPLEMENTARY GIT OUTPUT (redacted) ===
+=== GIT IDENTITY ===
+Le Dang Nhut Anh
+[EMAIL_REDACTED]
+=== GIT REMOTE ===
+origin	https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (fetch)
+origin	https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (push)
+=== GIT FETCH ===
+=== GIT BRANCH ===
+* feature/resources-and-team
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/feature/learning-roadmap
+  remotes/origin/feature/practice-exercises
+  remotes/origin/feature/python-basics
+  remotes/origin/feature/resources-and-team
+  remotes/origin/feature/site-foundation
+  remotes/origin/main
+=== GIT STATUS ===
+On branch feature/resources-and-team
+Your branch is up to date with 'origin/feature/resources-and-team'.
+
+nothing to commit, working tree clean
+=== GIT LOG ===
+8ef80ed docs(evidence): Add Nhut Anh Git workflow transcript
+a00219a Add files via upload
+6f39c31 Add files via upload
+047ff47 Add files via upload
+4eba212 Merge pull request #3 from nghiep2405/feature/learning-roadmap
+8042849 Merge pull request #2 from nghiep2405/feature/practice-exercises
+6c8fa87 Add navigation links and anchors to roadmap
+0286086 docs(evidence): Add Truc Git workflow transcript
+4c2e3bf Add suggestion for roadmap.html
+808c430 feat(practice-exercises): Add self-check checklist and study navigation
+=== GIT SHOW ===
+commit 8ef80edde20bff9d9a98983c5911ae751b437bfb
+Author: Le Dang Nhut Anh <[EMAIL_REDACTED]>
+Date:   Sun Nov 29 00:06:40 2026 +0700
+
+    docs(evidence): Add Nhut Anh Git workflow transcript
+
+ docs/evidence/git-nhutanh.txt | 85 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 85 insertions(+)
+=== GIT DIFF ===
+diff --git a/about.html b/about.html
+index a66eb50..10acbf3 100644
+--- a/about.html
++++ b/about.html
+@@ -25,11 +25,45 @@
+   </header>
+ 
+   <main id="main-content" class="container">
+-    <h1>Về nhóm</h1>
+-    <section class="panel" aria-labelledby="page-status">
+-      <h2 id="page-status">Nội dung đang phát triển</h2>
+-      <p>Trang này sẽ giới thiệu 5 thành viên, vai trò và mục tiêu của dự án StudyHub.</p>
+-      <p class="page-owner">Phụ trách: Lê Đặng Nhựt Anh.</p>
++    <h1>Về nhóm StudyHub</h1>
++    <section class="panel" aria-labelledby="project-goal">
++      <h2 id="project-goal">Mục tiêu dự án</h2>
++      <p>StudyHub là cẩm nang Tư duy tính toán và Python cơ bản dành cho sinh viên mới học lập trình.</p>
++      <p>Thông qua Homework 07, nhóm thực hành quản lý mã nguồn và cộng tác bằng Git, GitHub.</p>
++    </section>
++    <section class="panel" aria-labelledby="team-members">
++      <h2 id="team-members">Thành viên nhóm</h2>
++      <ul>
++        <li>
++          <strong>Nguyễn An Nghiệp</strong> — MSSV: 23127234<br>
++          Vai trò: Điều phối, nền tảng website, trang chủ và release.<br>
++          GitHub: <a href="https://github.com/nghiep2405">nghiep2405</a>
++        </li>
++        <li>
++          <strong>Lê Vĩnh Trọng</strong> — MSSV: 25127247<br>
++          Vai trò: Lộ trình học, review và thay đổi conflict A.<br>
++          GitHub: <a href="https://github.com/levinhtrong2605-blue">levinhtrong2605-blue</a>
++        </li>
++        <li>
++          <strong>Nguyễn Thiên Vũ</strong> — MSSV: 25127557<br>
++          Vai trò: Python cơ bản, review và xử lý conflict.<br>
++          GitHub: <a href="https://github.com/nguyenthienvu9565">nguyenthienvu9565</a>
++        </li>
++        <li>
++          <strong>Nguyễn Trọng Trực</strong> — MSSV: 25127535<br>
++          Vai trò: Bài tập thực hành, review và tạo commit lỗi navigation.<br>
++          GitHub: <a href="https://github.com/nguyentrongtruc22-ship-it">nguyentrongtruc22-ship-it</a>
++        </li>
++        <li>
++          <strong>Lê Đặng Nhựt Anh</strong> — MSSV: 25127264<br>
++          Vai trò: Tài nguyên, giới thiệu nhóm, review, revert và kiểm tra tích hợp.<br>
++          GitHub: <a href="https://github.com/ldnanh2517">ldnanh2517</a>
++        </li>
++      </ul>
++    </section>
++    <section class="panel" aria-labelledby="project-link">
++      <h2 id="project-link">Mã nguồn dự án</h2>
++      <p><a href="https://github.com/nghiep2405/HOMEWORK-TDTT-GIT">Repository StudyHub trên GitHub</a></p>
+     </section>
+   </main>
+ 
+[Diff of the original evidence transcript omitted: duplicate content and local system details.]
+diff --git a/resources.html b/resources.html
+index 242f014..7cb37d8 100644
+--- a/resources.html
++++ b/resources.html
+@@ -25,11 +25,22 @@
+   </header>
+ 
+   <main id="main-content" class="container">
+-    <h1>Tài nguyên</h1>
+-    <section class="panel" aria-labelledby="page-status">
+-      <h2 id="page-status">Nội dung đang phát triển</h2>
+-      <p>Trang này sẽ tổng hợp các nguồn học lập trình và Python kèm mô tả ngắn.</p>
+-      <p class="page-owner">Phụ trách: Lê Đặng Nhựt Anh.</p>
++    <h1>Tài nguyên học tập</h1>
++    <section class="panel" aria-labelledby="resource-list">
++      <h2 id="resource-list">Nguồn học Python</h2>
++      <p>Bạn có thể tham khảo các tài liệu sau để học và luyện tập Python:</p>
++      <ul>
++        <li><a href="https://www.w3schools.com/python/">W3Schools — Python Tutorial</a>: Học cú pháp cơ bản qua ví dụ ngắn và bài tập tương tác.</li>
++        <li><a href="https://cs50.harvard.edu/python/">Harvard CS50P</a>: Học Python qua bài giảng và bài tập theo từng chủ đề.</li>
++        <li><a href="https://docs.python.org/3/tutorial/">Python Tutorial</a>: Đọc tài liệu chính thức về cú pháp và cách sử dụng Python.</li>
++        <li><a href="https://wiki.python.org/moin/BeginnersGuide">Python Wiki — Beginner's Guide</a>: Tìm tài liệu nhập môn phù hợp với người mới học.</li>
++      </ul>
++      <p class="page-owner">Phụ trách nội dung: Lê Đặng Nhựt Anh.</p>
++    </section>
++    <section class="panel" aria-labelledby="next-step">
++      <h2 id="next-step">Gợi ý cách học</h2>
++      <p>Đọc tài liệu, chạy lại ví dụ rồi tự giải bài tập. Nếu gặp khó khăn, hãy ôn lại kiến thức liên quan.</p>
++      <p>Xem <a href="roadmap.html">lộ trình học</a>, <a href="python.html">Python cơ bản</a> và <a href="practice.html">bài tập thực hành</a>.</p>
+     </section>
+   </main>
+ 
+=== DEVELOPMENT COMMITS ===
+commit a00219aef425257990c4618058ca279f86e5fc89
+Author: ldnanh2517 <[EMAIL_REDACTED]>
+Date:   Sat Nov 28 23:46:26 2026 +0700
+
+    Add files via upload
+
+diff --git a/about.html b/about.html
+index 8c40da5..10acbf3 100644
+--- a/about.html
++++ b/about.html
+@@ -36,26 +36,35 @@
+       <ul>
+         <li>
+           <strong>Nguyễn An Nghiệp</strong> — MSSV: 23127234<br>
+-          Vai trò: Điều phối, nền tảng website, trang chủ và release.
++          Vai trò: Điều phối, nền tảng website, trang chủ và release.<br>
++          GitHub: <a href="https://github.com/nghiep2405">nghiep2405</a>
+         </li>
+         <li>
+           <strong>Lê Vĩnh Trọng</strong> — MSSV: 25127247<br>
+-          Vai trò: Lộ trình học, review và thay đổi conflict A.
++          Vai trò: Lộ trình học, review và thay đổi conflict A.<br>
++          GitHub: <a href="https://github.com/levinhtrong2605-blue">levinhtrong2605-blue</a>
+         </li>
+         <li>
+           <strong>Nguyễn Thiên Vũ</strong> — MSSV: 25127557<br>
+-          Vai trò: Python cơ bản, review và xử lý conflict.
++          Vai trò: Python cơ bản, review và xử lý conflict.<br>
++          GitHub: <a href="https://github.com/nguyenthienvu9565">nguyenthienvu9565</a>
+         </li>
+         <li>
+           <strong>Nguyễn Trọng Trực</strong> — MSSV: 25127535<br>
+-          Vai trò: Bài tập thực hành, review và tạo commit lỗi navigation.
++          Vai trò: Bài tập thực hành, review và tạo commit lỗi navigation.<br>
++          GitHub: <a href="https://github.com/nguyentrongtruc22-ship-it">nguyentrongtruc22-ship-it</a>
+         </li>
+         <li>
+           <strong>Lê Đặng Nhựt Anh</strong> — MSSV: 25127264<br>
+-          Vai trò: Tài nguyên, giới thiệu nhóm, review, revert và kiểm tra tích hợp.
++          Vai trò: Tài nguyên, giới thiệu nhóm, review, revert và kiểm tra tích hợp.<br>
++          GitHub: <a href="https://github.com/ldnanh2517">ldnanh2517</a>
+         </li>
+       </ul>
+     </section>
++    <section class="panel" aria-labelledby="project-link">
++      <h2 id="project-link">Mã nguồn dự án</h2>
++      <p><a href="https://github.com/nghiep2405/HOMEWORK-TDTT-GIT">Repository StudyHub trên GitHub</a></p>
++    </section>
+   </main>
+ 
+   <footer class="site-footer">
+
+commit 6f39c31e5df21a0c217b5ba003e2080dab411cd5
+Author: ldnanh2517 <[EMAIL_REDACTED]>
+Date:   Sat Nov 28 23:45:38 2026 +0700
+
+    Add files via upload
+
+diff --git a/about.html b/about.html
+index a66eb50..8c40da5 100644
+--- a/about.html
++++ b/about.html
+@@ -25,11 +25,36 @@
+   </header>
+ 
+   <main id="main-content" class="container">
+-    <h1>Về nhóm</h1>
+-    <section class="panel" aria-labelledby="page-status">
+-      <h2 id="page-status">Nội dung đang phát triển</h2>
+-      <p>Trang này sẽ giới thiệu 5 thành viên, vai trò và mục tiêu của dự án StudyHub.</p>
+-      <p class="page-owner">Phụ trách: Lê Đặng Nhựt Anh.</p>
++    <h1>Về nhóm StudyHub</h1>
++    <section class="panel" aria-labelledby="project-goal">
++      <h2 id="project-goal">Mục tiêu dự án</h2>
++      <p>StudyHub là cẩm nang Tư duy tính toán và Python cơ bản dành cho sinh viên mới học lập trình.</p>
++      <p>Thông qua Homework 07, nhóm thực hành quản lý mã nguồn và cộng tác bằng Git, GitHub.</p>
++    </section>
++    <section class="panel" aria-labelledby="team-members">
++      <h2 id="team-members">Thành viên nhóm</h2>
++      <ul>
++        <li>
++          <strong>Nguyễn An Nghiệp</strong> — MSSV: 23127234<br>
++          Vai trò: Điều phối, nền tảng website, trang chủ và release.
++        </li>
++        <li>
++          <strong>Lê Vĩnh Trọng</strong> — MSSV: 25127247<br>
++          Vai trò: Lộ trình học, review và thay đổi conflict A.
++        </li>
++        <li>
++          <strong>Nguyễn Thiên Vũ</strong> — MSSV: 25127557<br>
++          Vai trò: Python cơ bản, review và xử lý conflict.
++        </li>
++        <li>
++          <strong>Nguyễn Trọng Trực</strong> — MSSV: 25127535<br>
++          Vai trò: Bài tập thực hành, review và tạo commit lỗi navigation.
++        </li>
++        <li>
++          <strong>Lê Đặng Nhựt Anh</strong> — MSSV: 25127264<br>
++          Vai trò: Tài nguyên, giới thiệu nhóm, review, revert và kiểm tra tích hợp.
++        </li>
++      </ul>
+     </section>
+   </main>
+ 
+
+commit 047ff47d82fb8110e45380bb75d6ee122348a203
+Author: ldnanh2517 <[EMAIL_REDACTED]>
+Date:   Sat Nov 28 23:43:56 2026 +0700
+
+    Add files via upload
+
+diff --git a/resources.html b/resources.html
+index 242f014..7cb37d8 100644
+--- a/resources.html
++++ b/resources.html
+@@ -25,11 +25,22 @@
+   </header>
+ 
+   <main id="main-content" class="container">
+-    <h1>Tài nguyên</h1>
+-    <section class="panel" aria-labelledby="page-status">
+-      <h2 id="page-status">Nội dung đang phát triển</h2>
+-      <p>Trang này sẽ tổng hợp các nguồn học lập trình và Python kèm mô tả ngắn.</p>
+-      <p class="page-owner">Phụ trách: Lê Đặng Nhựt Anh.</p>
++    <h1>Tài nguyên học tập</h1>
++    <section class="panel" aria-labelledby="resource-list">
++      <h2 id="resource-list">Nguồn học Python</h2>
++      <p>Bạn có thể tham khảo các tài liệu sau để học và luyện tập Python:</p>
++      <ul>
++        <li><a href="https://www.w3schools.com/python/">W3Schools — Python Tutorial</a>: Học cú pháp cơ bản qua ví dụ ngắn và bài tập tương tác.</li>
++        <li><a href="https://cs50.harvard.edu/python/">Harvard CS50P</a>: Học Python qua bài giảng và bài tập theo từng chủ đề.</li>
++        <li><a href="https://docs.python.org/3/tutorial/">Python Tutorial</a>: Đọc tài liệu chính thức về cú pháp và cách sử dụng Python.</li>
++        <li><a href="https://wiki.python.org/moin/BeginnersGuide">Python Wiki — Beginner's Guide</a>: Tìm tài liệu nhập môn phù hợp với người mới học.</li>
++      </ul>
++      <p class="page-owner">Phụ trách nội dung: Lê Đặng Nhựt Anh.</p>
++    </section>
++    <section class="panel" aria-labelledby="next-step">
++      <h2 id="next-step">Gợi ý cách học</h2>
++      <p>Đọc tài liệu, chạy lại ví dụ rồi tự giải bài tập. Nếu gặp khó khăn, hãy ôn lại kiến thức liên quan.</p>
++      <p>Xem <a href="roadmap.html">lộ trình học</a>, <a href="python.html">Python cơ bản</a> và <a href="practice.html">bài tập thực hành</a>.</p>
+     </section>
+   </main>
+ 
+=== EVIDENCE COMMIT ON GITHUB ===
+8ef80ed docs(evidence): Add Nhut Anh Git workflow transcript
+=== REMOTE BRANCH ===
+8ef80edde20bff9d9a98983c5911ae751b437bfb	refs/heads/feature/resources-and-team
