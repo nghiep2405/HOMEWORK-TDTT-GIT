@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thực hành | StudyHub</title>
+  <meta name="description" content="Ba bài tập Python cơ bản kèm ví dụ đầu vào, đầu ra và gợi ý tư duy giải quyết vấn đề dành cho sinh viên mới bắt đầu.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -25,11 +26,37 @@
   </header>
 
   <main id="main-content" class="container">
-    <h1>Thực hành</h1>
-    <section class="panel" aria-labelledby="page-status">
-      <h2 id="page-status">Nội dung đang phát triển</h2>
-      <p>Trang này sẽ có bài tính tổng hai số, kiểm tra chẵn/lẻ và tính tổng từ 1 đến n.</p>
-      <p class="page-owner">Phụ trách: Nguyễn Trọng Trực.</p>
+    <h1>Thực hành Python cơ bản</h1>
+
+    <section class="panel" aria-labelledby="practice-intro">
+      <h2 id="practice-intro">Hướng dẫn tự thực hành</h2>
+      <p>Ba bài tập dưới đây giúp bạn vận dụng kiến thức về biến, câu lệnh điều kiện và vòng lặp trong Python. Trước khi xem gợi ý, hãy thử phân tích theo 3 bước:</p>
+      <ol>
+        <li>Xác định rõ dữ liệu đầu vào (Input) và kết quả đầu ra (Output).</li>
+        <li>Viết các bước xử lý bằng lời (thuật toán) rồi chuyển sang mã Python.</li>
+        <li>Chạy thử với các ví dụ cho sẵn và tự kiểm tra thêm trường hợp biên (số 0, số âm, số lớn).</li>
+      </ol>
+      <p class="page-owner">Phụ trách nội dung: Nguyễn Trọng Trực.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="exercise-1">
+      <h2 id="exercise-1">Bài 1: Tính tổng hai số</h2>
+      <p><strong>Đề bài:</strong> Nhập vào hai số nguyên <code>a</code> và <code>b</code> từ bàn phím. Tính và in ra tổng của hai số đó.</p>
+      <ul>
+        <li><strong>Đầu vào:</strong> Hai số nguyên <code>a</code> và <code>b</code>.</li>
+        <li><strong>Đầu ra:</strong> Một số nguyên là giá trị của <code>a + b</code>.</li>
+      </ul>
+      <h3>Ví dụ minh họa</h3>
+      <pre><code>Đầu vào:
+a = 7
+b = 5
+
+Đầu ra:
+Tổng = 12</code></pre>
+      <details>
+        <summary>Xem gợi ý</summary>
+        <p>Dùng <code>int(input())</code> để đọc và chuyển đổi dữ liệu nhập từ chuỗi (<code>str</code>) sang số nguyên (<code>int</code>), sau đó tính <code>tong = a + b</code> và dùng <code>print()</code> để hiển thị kết quả.</p>
+      </details>
     </section>
   </main>
 
