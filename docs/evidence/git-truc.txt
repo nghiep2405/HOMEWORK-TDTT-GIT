@@ -1,0 +1,88 @@
+=== Git Workflow Evidence — Nguyễn Trọng Trực (25127535) ===
+GitHub: nguyentrongtruc22-ship-it
+Branch: feature/practice-exercises
+Date: 2026-11-28 17:26:03 +0700
+
+--- 1. Git Identity & Remote ---
+$ git config --get user.name
+Nguyen Trong Truc
+$ git config --get user.email
+nguyentrongtruc22@gmail.com
+$ git remote -v
+origin	https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (fetch)
+origin	https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (push)
+
+--- 2. Branch & Status ---
+$ git branch --show-current
+feature/practice-exercises
+$ git branch -vv
+* feature/practice-exercises 808c430 [origin/feature/practice-exercises] feat(practice-exercises): Add self-check checklist and study navigation
+  main                       72b71de [origin/main] Merge pull request #1 from nghiep2405/feature/site-foundation
+$ git status
+On branch feature/practice-exercises
+Your branch is up to date with 'origin/feature/practice-exercises'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/evidence/git-truc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+--- 3. Commit History (main..HEAD) ---
+$ git rev-list --count main..HEAD
+3
+$ git log --reverse --format="%h | %an <%ae> | %ad | %s" --date=iso main..HEAD
+2cb2dfd | Nguyen Trong Truc <nguyentrongtruc22@gmail.com> | 2026-11-28 17:24:18 +0700 | feat(practice-exercises): Add practice page introduction and exercise 1
+f596b48 | Nguyen Trong Truc <nguyentrongtruc22@gmail.com> | 2026-11-28 17:24:47 +0700 | feat(practice-exercises): Add exercise 2 and exercise 3 with examples
+808c430 | Nguyen Trong Truc <nguyentrongtruc22@gmail.com> | 2026-11-28 17:25:12 +0700 | feat(practice-exercises): Add self-check checklist and study navigation
+
+$ git log --oneline -6
+808c430 feat(practice-exercises): Add self-check checklist and study navigation
+f596b48 feat(practice-exercises): Add exercise 2 and exercise 3 with examples
+2cb2dfd feat(practice-exercises): Add practice page introduction and exercise 1
+72b71de Merge pull request #1 from nghiep2405/feature/site-foundation
+1491214 docs(evidence): Add Nghiep Git workflow transcript
+69b367f feat(site-foundation): Connect all page shells through shared navigation
+
+--- 4. Commit Details (git show --stat) ---
+$ git show --stat 2cb2dfd
+commit 2cb2dfda21a7f689cb124436978515fab3609b00
+Author: Nguyen Trong Truc <nguyentrongtruc22@gmail.com>
+Date:   Sat Nov 28 17:24:18 2026 +0700
+
+    feat(practice-exercises): Add practice page introduction and exercise 1
+
+ practice.html | 37 ++++++++++++++++++++++++++++++++-----
+ 1 file changed, 32 insertions(+), 5 deletions(-)
+
+$ git show --stat f596b48
+commit f596b48fe7612ab06ad49f9d716af4a784553916
+Author: Nguyen Trong Truc <nguyentrongtruc22@gmail.com>
+Date:   Sat Nov 28 17:24:47 2026 +0700
+
+    feat(practice-exercises): Add exercise 2 and exercise 3 with examples
+
+ practice.html | 42 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 42 insertions(+)
+
+$ git show --stat 808c430
+commit 808c430473758790b7e1f4048ec74eb797285b4d
+Author: Nguyen Trong Truc <nguyentrongtruc22@gmail.com>
+Date:   Sat Nov 28 17:25:12 2026 +0700
+
+    feat(practice-exercises): Add self-check checklist and study navigation
+
+ practice.html | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+--- 5. Diff Summary & Whitespace Check (main..HEAD) ---
+$ git diff --check main..HEAD
+$ git diff --stat main..HEAD
+ practice.html | 91 +++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 86 insertions(+), 5 deletions(-)
+
+--- 6. Push Output ---
+$ git push -u origin feature/practice-exercises
+To https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git
+ * [new branch]      feature/practice-exercises -> feature/practice-exercises
+branch 'feature/practice-exercises' set up to track 'origin/feature/practice-exercises'.
