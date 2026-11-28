@@ -1,0 +1,85 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261128235906
+Username: NHUTANHVJPPRO\TAM NHU
+RunAs User: NHUTANHVJPPRO\TAM NHU
+Configuration Name: 
+Machine: NHUTANHVJPPRO (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 4408
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\TAM NHU\git-nhutanh.txt
+PS C:\WINDOWS\System32> git clone https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git
+fatal: could not create work tree dir 'HOMEWORK-TDTT-GIT': Permission denied
+PS C:\WINDOWS\System32> cd $HOME
+PS C:\Users\TAM NHU> git clone https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git
+Cloning into 'HOMEWORK-TDTT-GIT'...
+remote: Enumerating objects: 88, done.
+remote: Counting objects: 100% (88/88), done.
+remote: Compressing objects: 100% (51/51), done.
+remote: Total 88 (delta 40), reused 69 (delta 29), pack-reused 0 (from 0)
+Receiving objects: 100% (88/88), 30.84 KiB | 3.43 MiB/s, done.
+Resolving deltas: 100% (40/40), done.
+PS C:\Users\TAM NHU> cd HOMEWORK-TDTT-GIT
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config user.name "Le Dang Nhut Anh"
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config user.email "EMAIL_GITHUB_CUA_BAN"
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config user.email "ldnanh2517@clc.fitus.edu.vn"
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git remote -v
+origin  https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (fetch)
+origin  https://github.com/nghiep2405/HOMEWORK-TDTT-GIT.git (push)
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config --get user.name
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git config --get user.email
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git fetch origin
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git pull --ff-only origin main
+From https://github.com/nghiep2405/HOMEWORK-TDTT-GIT
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git switch feature/resources-and-team
+branch 'feature/resources-and-team' set up to track 'origin/feature/resources-and-team'.
+Switched to a new branch 'feature/resources-and-team'
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git branch
+* feature/resources-and-team
+  main
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git status
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git log --oneline -8
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git --no-pager show HEAD
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git --no-pager diff origin/main...HEAD
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git branch --show-current
+feature/resources-and-team
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git status
+On branch feature/resources-and-team
+Your branch is up to date with 'origin/feature/resources-and-team'.
+
+nothing to commit, working tree clean
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git log --oneline -5
+8042849 Merge pull request #2 from nghiep2405/feature/practice-exercises
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> git diff --stat origin/main...HEAD
+
+PS C:\Users\TAM NHU\HOMEWORK-TDTT-GIT> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261129000554
+**********************
